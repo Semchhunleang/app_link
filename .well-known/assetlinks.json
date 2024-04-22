@@ -2,7 +2,7 @@
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
-      "package_name": "com.remp.co",
+      "package_name": "com.example.rem_app",
       "sha256_cert_fingerprints":
         ["B2:A9:B4:BC:A3:FB:10:BE:79:DE:5A:3F:FF:C3:FE:6F:3A:2D:33:1A:D9:2D:19:B8:59:21:5D:B9:A1:F2:63:68"]
     }

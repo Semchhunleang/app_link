@@ -1,3 +1,4 @@
+import 'package:go_router/go_router.dart';
 import 'package:real_estate/presentation/utils/constraints.dart';
 import 'package:real_estate/presentation/widget/custom_test_style.dart';
 import 'package:real_estate/state_inject_package_names.dart';
@@ -41,11 +42,9 @@ class _SplashScreenState extends State<SplashScreen> {
               context.read<ProfileCubit>().getAgentProfile();
               context.read<ProfileCubit>().getUserProfile().then((value) {
                 if (agentProfileCubit.statusCode == 401) {
-                  Navigator.pushReplacementNamed(
-                      context, RouteNames.loginScreen);
+                  context.go('/login');
                 } else {
-                  Navigator.pushReplacementNamed(
-                      context, RouteNames.mainPageScreen);
+                  context.go('/login');
                 }
                 // debugPrint("------------- above splash line 1 : $statusCode");
               });
@@ -58,11 +57,10 @@ class _SplashScreenState extends State<SplashScreen> {
               // debugPrint(
               //     "============= splash line 1: ${loginBloc.userInfo!.tokenModel.accessToken}");
             } else if (appSettingBloc.isOnBoardingShown) {
-              Navigator.pushReplacementNamed(context, RouteNames.loginScreen);
+              context.go('/login');
               debugPrint("============= splash line 2 : ");
             } else {
-              Navigator.pushReplacementNamed(
-                  context, RouteNames.onBoardingScreen);
+              context.go('/login');
               debugPrint("============= splash line 3 : ");
             }
           }

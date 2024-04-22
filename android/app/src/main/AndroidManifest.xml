@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.remp.co">
+    package="com.example.rem_app">
 
     <!-- <meta-data android:name="flutter_deeplinking_enabled" android:value="true" /> -->
     <queries>
@@ -40,9 +40,10 @@
             <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" android:host="remp.page.link" />
-                <data android:scheme="https" />
+                <category android:name="android.intent.category.BROWSABLE" />       
+                 <data android:scheme="https" />
+                 <data android:host="app-link-omega.vercel.app" />
+                <!-- <data android:scheme="https" /> -->
             </intent-filter>
             <!-- <meta-data android:name="flutter_deeplinking_enabled" android:value="true" />
             <intent-filter android:autoVerify="true">

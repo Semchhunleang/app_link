@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:real_estate/firebase_options.dart';
 import 'package:real_estate/presentation/screens/authentication/login_screen.dart';
 import 'package:real_estate/presentation/screens/authentication/sing_up_screen.dart';
@@ -52,6 +53,24 @@ class _RealEstateState extends State<RealEstate> {
     FirebaseDynamicLinkHelper.initDynamicLinks(context);
   }
 
+  final router = GoRouter(
+    initialLocation: '/',
+    routes: [
+      GoRoute(
+        path: '/',
+        builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: '/login',
+        builder: (context, state) => const LoginScreen(),
+      ),
+      GoRoute(
+        path: '/register',
+        builder: (context, state) => const SingUpScreen(),
+      ),
+    ],
+  );
+
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -64,12 +83,11 @@ class _RealEstateState extends State<RealEstate> {
           providers: StateInjector.repositoryProviders,
           child: MultiBlocProvider(
             providers: StateInjector.blocProviders,
-            child: MaterialApp(
+            child: MaterialApp.router(
               debugShowCheckedModeBanner: false,
               title: KString.appName,
               theme: CustomTheme.theme,
-              onGenerateRoute: RouteNames.generateRoutes,
-              initialRoute: RouteNames.splashScreen,
+              routerConfig: router,
               // routes: {
               //   '/': (context) => const SplashScreen(),
               //   '/login': (context) => const LoginScreen(),
