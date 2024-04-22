@@ -67,7 +67,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '397285538208',
     projectId: 'remp-25fa3',
     storageBucket: 'remp-25fa3.appspot.com',
-    iosBundleId: 'com.example.rem_app',
+    iosBundleId: 'com.remp.co',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
