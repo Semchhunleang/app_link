@@ -1,0 +1,11 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"remp-25fa3","appId":"1:397285538208:android:269aeed58ad0614270ccc5","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"remp-25fa3","appId":"1:397285538208:ios:b715267a81a576cd70ccc5","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"remp-25fa3","configurations":{"android":"1:397285538208:android:269aeed58ad0614270ccc5","ios":"1:397285538208:ios:b715267a81a576cd70ccc5","web":"1:397285538208:web:7972affad4133d7570ccc5","windows":"1:397285538208:web:daadd66c73cfbd5e70ccc5","headers": [
+    {
+      "source": "/.well-known/assetlinks.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ]}}}}}}

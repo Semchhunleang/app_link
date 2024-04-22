@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "397285538208",
+    "project_id": "remp-25fa3",
+    "storage_bucket": "remp-25fa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397285538208:android:269aeed58ad0614270ccc5",
+        "android_client_info": {
+          "package_name": "com.remp.co"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhdzT8cN12YYOQcKQVBpTtVPz8ySiRC_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
